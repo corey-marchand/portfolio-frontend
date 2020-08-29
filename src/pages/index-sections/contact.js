@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactForm from 'components/Form/Form';
 import styled from 'styled-components';
+import Container from 'react-bootstrap/Container';
 
 const Styles = styled.div`
     h2 {
@@ -10,8 +11,12 @@ const Styles = styled.div`
     }
 
     div.styles {
-        border-style: groove;
+        content-align: center;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: #1A2126;
+        border: double #1A2126;
     }
 
     p {
@@ -21,11 +26,16 @@ const Styles = styled.div`
 
 const Contact = () => (
     <Styles>
+        <Container>
         <div>
             <h2>Contact Me!</h2>
-            <div className="styles"></div>   
+            <br />
+            <div className="styles"></div> 
+            <br />  
             <ContactForm />
         </div>
+        <br />
+        </Container>
     </Styles>
 )
 
