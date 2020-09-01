@@ -7,63 +7,66 @@ const Styles = styled.div`
    .navbar {
     background-color: #1A2126;
     height: 80px;
-    width: 100%;
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    content-align: center;
    }
-    .nav-margin {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .link a{
-        color: white;
-    }
+
+   .navbar-container {
+        background-color: #1A2126; 
+   }
 `;
 
 class NavigationBar extends React.Component {
     render() {
         return (
             <Styles>
-            <div className="navbar">
-                    <Link
-                        className="link"
-                        activeClass="active" 
-                        to="main"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >Main
-                    </Link>
-                    <Link
-                        className="link"
-                        activeClass="active" 
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >About
-                    </Link>
-                    <Link
-                        className="link"
-                        activeClass="active" 
-                        to="portfolio"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >Portfolio
-                    </Link>
-                    <Link
-                        className="link"
-                        activeClass="active" 
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >Contact
-                    </Link>                
+            <div className="navbar-container">
+                <div className="navbar">
+                        <Link
+                            className="link"
+                            activeClass="active" 
+                            to="main"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Main
+                        </Link>
+                        <Link
+                            className="link"
+                            activeClass="active" 
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >About
+                        </Link>
+                        <Link
+                            className="link"
+                            activeClass="active" 
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Portfolio
+                        </Link>
+                        <Link
+                            className="link"
+                            activeClass="active" 
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Contact
+                        </Link>                
+                </div>
             </div>
             </Styles>
         )
