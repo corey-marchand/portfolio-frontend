@@ -12,8 +12,8 @@ import Index from '../src/pages/Index';
 // others
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Index />
-  </BrowserRouter>,
+  // <BrowserRouter>
+    <Index />,
+  // </BrowserRouter>,
   document.getElementById("root")
 );

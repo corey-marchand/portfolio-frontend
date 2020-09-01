@@ -29,7 +29,7 @@ const Styles = styled.div`
 const Portfolio = () => (
     <Styles>
         <Container>
-        <div>
+        <div id="portfolio">
             <h2>Previous Projects</h2>
             <div className="styles"></div>
             <br />

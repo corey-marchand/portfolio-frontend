@@ -18,12 +18,12 @@ function Index() {
   // });
   return (
     <>
-      <NavigationBar />
+      <NavigationBar id="main"/>
       <IndexHeader />
       <div className="main">
-        <About />
-        <Portfolio />
-        <Contact />
+        <About id="about"/>
+        <Portfolio id="portfolio"/>
+        <Contact id="contact"/>
       </div>
     </>
   );

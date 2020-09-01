@@ -1,44 +1,73 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import styled from 'styled-components';
+import  styled  from 'styled-components';
+import { Link } from 'react-scroll';
 
 const Styles = styled.div`
    .navbar {
     background-color: #1A2126;
+    height: 80px;
+    width: 100%;
    }
     .nav-margin {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
-    .navbar-brand, .navbar-nav .nav-link {
-        padding: 0px 80px;
-        font-size: 100px;
+    .link a{
         color: white;
-        text-align: center;
-
-        &:hover {
-            color: white;
-        }
     }
 `;
 
-
-const NavigationBar = () => (
-    <Styles>
-        <Navbar className="navbar">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="nav-margin">
-                    <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/portfolio">Portfolio</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    </Styles> 
-)
+class NavigationBar extends React.Component {
+    render() {
+        return (
+            <Styles>
+            <div className="navbar">
+                    <Link
+                        className="link"
+                        activeClass="active" 
+                        to="main"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >Main
+                    </Link>
+                    <Link
+                        className="link"
+                        activeClass="active" 
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >About
+                    </Link>
+                    <Link
+                        className="link"
+                        activeClass="active" 
+                        to="portfolio"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >Portfolio
+                    </Link>
+                    <Link
+                        className="link"
+                        activeClass="active" 
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >Contact
+                    </Link>                
+            </div>
+            </Styles>
+        )
+    }
+}
 
 export default NavigationBar;
-

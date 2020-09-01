@@ -27,7 +27,7 @@ const Styles = styled.div`
 const Contact = () => (
     <Styles>
         <Container>
-        <div>
+        <div id="contact">
             <h2>Contact Me!</h2>
             <br />
             <div className="styles"></div> 

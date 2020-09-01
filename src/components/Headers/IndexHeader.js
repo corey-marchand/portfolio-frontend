@@ -28,8 +28,8 @@ import NavigationBar from 'components/Navbars/NavigationBar';
 function IndexHeader() {
   return (
     <>
-      {/* <NavigationBar /> */}
       <div
+        id="main"
         className="page-header section-dark"
         style={{
           backgroundImage:
