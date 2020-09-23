@@ -1,30 +1,28 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
 import  styled  from 'styled-components';
 import { Link } from 'react-scroll';
 
 const Styles = styled.div`
-   .navbar {
-    background-color: #1A2126;
-    height: 80px;
-    width: 80%;
-    color: white;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    content-align: center;
-   }
+    .navbar {
+        background-color: #1A2126;
+        height: 80px;
+        width:90%;
+        color: white;
+        font-size: 30px; 
+        margin-left: auto;
+        margin-right: auto;  
+    }
 
-   .navbar-container {
-        background-color: #1A2126; 
-   }
+    .navbar-container {
+        background-color: #1A2126;
+    }
 `;
 
 class NavigationBar extends React.Component {
     render() {
         return (
             <Styles>
-            <div className="navbar-container">
+                <div className="navbar-container">
                 <div className="navbar">
                         <Link
                             className="link"
@@ -34,7 +32,7 @@ class NavigationBar extends React.Component {
                             smooth={true}
                             offset={0}
                             duration={500}
-                        >Main
+                        >Home
                         </Link>
                         <Link
                             className="link"
@@ -66,8 +64,8 @@ class NavigationBar extends React.Component {
                             duration={500}
                         >Contact
                         </Link>                
+                    </div>
                 </div>
-            </div>
             </Styles>
         )
     }

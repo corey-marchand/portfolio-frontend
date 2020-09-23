@@ -21,7 +21,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
-import NavigationBar from 'components/Navbars/NavigationBar';
+// import NavigationBar from 'components/Navbars/NavigationBar';
 
 // core components
 
