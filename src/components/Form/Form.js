@@ -1,8 +1,8 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
-import { render } from 'node-sass';
-
+// import { render } from 'node-sass';
+import Container from 'react-bootstrap/Container';
 
 // class ContactForm extends React.Component {
 //     constructor(props) {
@@ -114,29 +114,29 @@ export default class ContactForm extends React.Component {
 
     render() {
       return (
-   
+        <Container>
         <form onSubmit={this.handleSubmit}>
             <fieldset>
-            <h2>Post A Recipe</h2>
-                <div className="form-group row">
+                <div className="form-group">
                     <label for="exampleInputEmail1">Name: </label>
-                    <input value={this.state.title} name="name" type="text" class="form-control"  placeholder="Enter Recipe"/>
+                    <input value={this.state.name} name="name" type="text" class="form-control"  placeholder="Name"/>
                 </div>
                 <div className="form-group">
                     <label for="exampleInputUsername">Email: </label>
-                    <input value={this.state.author} name="email" type="text" class="form-control" placeholder="author"/>
+                    <input value={this.state.email} name="email" type="text" class="form-control" placeholder="Email"/>
                 </div>
                 <div className="form-group">
                     <label for="exampleTextarea">Company: </label>
-                    <textarea value={this.state.description} name="company" class="form-control" type="text" id="exampleTextarea" rows="3"></textarea>
+                    <input value={this.state.company} name="company" class="form-control" placeholder="Company" type="text" />
                 </div>
                 <div className="form-group">
                     <label for="exampleTextarea">Message: </label>
-                    <textarea value={this.state.ingredients} name="message" class="form-control" type="text" id="exampleTextarea" rows="3"></textarea>
+                    <input value={this.state.message} name="message" class="form-control" type="text" placeholder="Message" id="exampleTextarea" rows="3" />
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
         </form>
+        </Container>
       );
     }
 }

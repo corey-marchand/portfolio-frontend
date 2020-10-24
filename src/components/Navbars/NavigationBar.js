@@ -10,7 +10,11 @@ const Styles = styled.div`
         color: white;
         font-size: 30px; 
         margin-left: auto;
-        margin-right: auto;  
+        margin-right: auto; 
+    }
+
+    .navbar:hover {
+        cursor: pointer;
     }
 
     .navbar-container {

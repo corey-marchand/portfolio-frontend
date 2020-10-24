@@ -8,6 +8,7 @@ const Styles = styled.div`
         font-weight: lighter;
         font-size: 60px;
         text-align: center;
+        color: white;
     }
 
     div.styles {

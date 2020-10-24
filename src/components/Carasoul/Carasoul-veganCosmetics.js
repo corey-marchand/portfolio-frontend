@@ -9,21 +9,21 @@ const CarasoulVeganCosmetics = () => (
     <Carousel>
         <Carousel.Item>
             <img
-            className="d-block h-25 w-100"
+            className="d-block w-100"
             src={VeganCosmetics}
             alt="First slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
-            className="d-block h-25 w-100"
+            className="d-block w-100"
             src={VeganCosmetics2}
             alt="Second slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
-            className="d-block h-25 w-100"
+            className="d-block w-100"
             src={VeganCosmetics3}
             alt="Third slide"
             />
