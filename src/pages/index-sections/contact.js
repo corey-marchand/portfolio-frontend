@@ -59,8 +59,9 @@ const Styles = styled.div`
         padding:32px 76px;
         text-decoration:none;
         text-shadow:1px 0px 1px #2b665e;
+        margin-left: 185px;
     }
-    
+
     .myButton:hover {
         background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
         background-color:#6c7c7c;
@@ -71,6 +72,33 @@ const Styles = styled.div`
         top:1px;
     }
     
+    .myButton-2 {
+        box-shadow:inset 0px 0px 3px 0px #91b8b3;
+        background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+        background-color:#768d87;
+        border-radius:42px;
+        border:12px solid #566963;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:28px;
+        font-weight:bold;
+        padding:32px 76px;
+        text-decoration:none;
+        text-shadow:1px 0px 1px #2b665e;
+        margin-right: 185px;
+    }
+
+    .myButton-2:hover {
+        background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+        background-color:#6c7c7c;
+    }
+
+    .myButton-2:active {
+        position:relative;
+        top:1px;
+    }
 `;
 
 const Contact = () => (
@@ -78,7 +106,7 @@ const Contact = () => (
         <Container>
         <div className="button-container">
             <a className="myButton" href="https://www.linkedin.com/in/corey-marchand/">LinkedIn</a>
-            <a className="myButton" href="mailto:corey.marchand@me.com">Email Me</a>
+            <a className="myButton-2" href="mailto:corey.marchand@me.com">Email Me</a>
         </div>
         <br />
         </Container>

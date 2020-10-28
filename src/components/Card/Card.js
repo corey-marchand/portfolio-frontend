@@ -9,18 +9,20 @@ import CarasoulVeganCosmetics  from '../Carasoul/Carasoul-veganCosmetics';
 
 const PortfolioCard = () => (
     <CardGroup className="container">
-      <Card className="mr-3 px-4 py-4">
-        <Carasoul variant="top" />
-        <Card.Body>
-          <Card.Title>Foodies Journal</Card.Title>
-          <Card.Text>
-            Foodies Journal is an application that allows users to post, view, and save recipes.  Utilizing a django backend, and a nextJs frontend, users can create an account that allows them to save, and post a recipe.  If you are not signed up with Foodie Journals, you are restricted to only seeing posted Recipes.  You are able to sort the recipes by ingredients and the meal types such as breakfest.  
-          </Card.Text>
-        </Card.Body>
-      </Card>
+        <Card className="mr-3 px-4 py-4">
+          <Carasoul variant="top" />
+          <Card.Body>
+            <Card.Title>Foodies Journal</Card.Title>
+            <Card.Text>
+              Foodies Journal is an application that allows users to post, view, and save recipes.  Utilizing a django backend, and a nextJs frontend, users can create an account that allows them to save, and post a recipe.  If you are not signed up with Foodie Journals, you are restricted to only seeing posted Recipes.  You are able to sort the recipes by ingredients and the meal types such as breakfest.  
+            </Card.Text>
+          </Card.Body>
+        </Card>
       <br />
       <Card className="mr-3 px-4 py-4">
-        <CarasoulEcommerce variant="top" />
+        <a className="myButton" href="https://e-commerce-store-2.vercel.app/">
+          <CarasoulEcommerce variant="top" />
+        </a>
         <Card.Body>
           <Card.Title>eCommerce Store</Card.Title>
           <Card.Text>
