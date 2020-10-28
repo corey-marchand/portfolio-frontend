@@ -104,7 +104,7 @@ const Styles = styled.div`
 const Contact = () => (
     <Styles>
         <Container>
-        <div className="button-container">
+        <div id="contact" className="button-container">
             <a className="myButton" href="https://www.linkedin.com/in/corey-marchand/">LinkedIn</a>
             <a className="myButton-2" href="mailto:corey.marchand@me.com">Email Me</a>
         </div>

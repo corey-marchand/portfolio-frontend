@@ -10,7 +10,9 @@ import CarasoulVeganCosmetics  from '../Carasoul/Carasoul-veganCosmetics';
 const PortfolioCard = () => (
     <CardGroup className="container">
         <Card className="mr-3 px-4 py-4">
+        <a className="myButton" href="https://foodiejournals.com/">
           <Carasoul variant="top" />
+        </a>
           <Card.Body>
             <Card.Title>Foodies Journal</Card.Title>
             <Card.Text>
@@ -26,13 +28,14 @@ const PortfolioCard = () => (
         <Card.Body>
           <Card.Title>eCommerce Store</Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to additional
-            content.{' '}
+            This application is built using ReactJs and a firebase backend.  This application allows users to view different clothing items, add them to an item cart, and to checkout the items if desired.  
           </Card.Text>
         </Card.Body>
       </Card>
       <Card className="mr-3 px-4 py-4">
+      <a className="myButton" href="https://github.com/vegan-cosmetics/vegan-cosmetics">
         <CarasoulVeganCosmetics variant="top" />
+      </a>
         <Card.Body>
           <Card.Title>Vegan Cosmetics</Card.Title>
           <Card.Text>
